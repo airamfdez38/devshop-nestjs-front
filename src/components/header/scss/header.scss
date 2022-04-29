@@ -1,4 +1,4 @@
-
+@import './../../../styles/variables.scss';
 
 header{
     display: flex;
@@ -6,21 +6,21 @@ header{
     justify-content: space-around;
     width: 100%;
         .header__socials{
-            background-color: #056F66;
+            background-color: $primary-dark;
 
-            .header-socials__ul{
+            .header_socials__ul{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
                 width: 10%;
                 
-                .socials-ul__li{
+                .socials_ul__li{
                     list-style: none;
 
-                    .socials-icon__anchor{
+                    .socials_icon__anchor{
                         font-size: 1.2rem;
-                        color: #00FAD9;
+                        color: $light-bg;
                     }
                 }
             }
@@ -30,28 +30,29 @@ header{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            background-color: #00FAD9;
-            color: #056F66;
+            background-color: $primary;
+            color: $primary-dark;
             padding: 20px;
-            .header-main__search{
+            .header_main__search{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 margin-left: 30px;
-                .main-search__icon{
+                .main_search__icon{
                     font-size: 1.2rem;
-                    color: #056F66;
+                    color: $primary-dark;
                 }
-                .main-search__input{
-                    background-color:#00FAD9;
+                .main_search__input{
+                    background-color:$primary;
                     border: none;
                     padding-left: 20px;
+                    color: $primary-dark;
                 }
             }
             // Aquí estilos del logo
 
 
-            .header-main__userArea{
+            .header_main__userArea{
                 margin-right: 30px;
                 width: 8%;
                 display: flex;
@@ -60,7 +61,7 @@ header{
                 align-items: center;
                 .userArea__icon{
                     font-size: 1.2rem;
-                    color: #056F66;
+                    color: $primary-dark;
                 }
             }
         }
