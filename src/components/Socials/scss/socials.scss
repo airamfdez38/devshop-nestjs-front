@@ -1,5 +1,4 @@
-@import './../../../styles/variables.scss';
-
+@import './../../../styles/scss/variables.scss';
 header{
     display: flex;
     flex-direction: column;
@@ -19,8 +18,8 @@ header{
                     list-style: none;
 
                     .socials_icon__anchor{
-                        font-size: 1.2rem;
-                        color: $light-bg;
+                        font-size: 1rem;
+                        color: $light_bg;
                     }
                 }
             }
@@ -32,7 +31,7 @@ header{
             align-items: center;
             background-color: $primary;
             color: $primary-dark;
-            padding: 20px;
+            padding: 15px;
             .header_main__search{
                 display: flex;
                 flex-direction: row;
