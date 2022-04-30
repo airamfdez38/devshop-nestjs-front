@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700;900&display=swap");
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +36,7 @@ header .header__socials .header_socials__ul .socials_ul__li {
 }
 
 header .header__socials .header_socials__ul .socials_ul__li .socials_icon__anchor {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
@@ -57,7 +56,7 @@ header .header__main {
           align-items: center;
   background-color: #AFC0C5;
   color: #085274;
-  padding: 20px;
+  padding: 15px;
 }
 
 header .header__main .header_main__search {
@@ -108,4 +107,4 @@ header .header__main .header_main__userArea .userArea__icon {
   font-size: 1.2rem;
   color: #085274;
 }
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=socials.css.map */

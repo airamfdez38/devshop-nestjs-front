@@ -1,9 +1,11 @@
-import Header from "./components/header/Header";
-import Nav from "./components/nav/Nav";
+
+import Socials from "./components/Socials/Socials";
+import Nav from "./components/Nav/Nav";
+import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Socials />
       <Nav />
     </div>
   );

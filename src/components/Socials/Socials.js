@@ -3,12 +3,12 @@ import React from 'react';
 import {FaFacebook, FaInstagram, FaShoppingCart, FaUser}from "react-icons/fa";
 import {FaTwitter} from "react-icons/fa";
 import {FaSearch} from "react-icons/fa";
-import './scss/header.scss';
+import './scss/socials.scss';
 
 //import logo from './logo.png'; 
 
 
-const Header = () => {
+const Socials = () => {
     
   return (
     <>
@@ -18,7 +18,6 @@ const Header = () => {
 
               <li className='socials_ul__li'>
                   <a href='www.instagram.com' className='socials_icon__anchor'><FaFacebook /></a>
-
               </li>
               <li className='socials_ul__li'>
                   <a href='www.instagram.com' className='socials_icon__anchor'><FaInstagram /></a>
@@ -49,4 +48,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Socials
