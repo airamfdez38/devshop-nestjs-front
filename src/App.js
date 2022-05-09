@@ -1,17 +1,18 @@
 
 import Socials from "./components/Socials/Socials";
-import Nav from "./components/Nav/Nav";
 import Header from "./components/Header/Header";
 import Footer from './components/Footer/Footer';
 import Main from "./components/Main/Main";
 import './App.scss';
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
+      
       <Socials />
       <Header />
-      <Nav />
+      <Navbar />
       <Main />
       <Footer />
     </div>

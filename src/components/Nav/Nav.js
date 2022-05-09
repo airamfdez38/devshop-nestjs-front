@@ -1,21 +1,31 @@
-import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import './scss/nav.scss';
- 
-const Nav= () => (
-  <nav className='nav__container'>
-    <ul className='nav__list'>
-      <AnchorLink href='#inicio' className='nav-list__link'>Inicio</AnchorLink>
-      <AnchorLink href='#stuff' className='nav-list__link'>Productos</AnchorLink>
-      <AnchorLink href='#stuff' className='nav-list__link'>Sudaderas</AnchorLink>
-      <AnchorLink href='#stuff' className='nav-list__link'>Camisetas</AnchorLink>
-      <AnchorLink href='#stuff' className='nav-list__link'>Tazas</AnchorLink>
-      <AnchorLink href='#stuff' className='nav-list__link'>Accesorios</AnchorLink>
-      <AnchorLink href='#stuff'className='nav-list__link'>Pegatinas</AnchorLink>
+import React from 'react';
+import {  Link } from "react-router-dom";
+import './scss/nav.css';
+
+
+const Nav = () => {
+  return (
+    <nav className='nav__container'>
+      <ul className='nav__list'>
+        <li className='nav-list__link'>
+          <Link to="/" style={{textDecoration: 'none', color:'#085274'}}>Inicio</Link>
+        </li>
+        <li className='nav-list__link'>
+          <Link to="/products" style={{textDecoration: 'none', color:'#085274'}}>Productos</Link>
+        </li>
+        <li className='nav-list__link'>
+          <Link to="/hoodies" style={{textDecoration: 'none', color:'#085274'}}>Sudaderas</Link>
+        </li>
+        <li className='nav-list__link'>
+          <Link to="/tshirts" style={{textDecoration: 'none', color:'#085274'}}>Camisetas</Link>
+        </li>
+        <li className='nav-list__link'>
+          <Link to="/mugs" style={{textDecoration: 'none', color:'#085274'}}>Tazas</Link>
+        </li>
     </ul>
-    <div className='nav__botton-line'></div>
-  
-  
+   
   </nav>
-)
-export  default Nav
+  )
+}
+
+export default Nav;
