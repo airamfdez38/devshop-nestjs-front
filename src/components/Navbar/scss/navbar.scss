@@ -1,28 +1,20 @@
-@import './../../../styles/scss/variables.scss';
+@import './../../../styles/scss/globals.scss';
 
 .nav__container{
-    display: flex;
-    flex-direction: column;
+    @extend .display-column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
     .nav__list{
-        display: flex;
-        flex-direction: row;
+        @extend .display-row;
         justify-content: space-around;
         list-style: none;
-      
         .nav-list__link{
             text-decoration: none;
             margin: 10px 20px;
             color: $primary-dark;
             font-weight: bold;
-           
         }
-       
-        
     }
-   
 }
 .nav__botton-line{
     width: 70%;

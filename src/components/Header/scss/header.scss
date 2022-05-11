@@ -1,23 +1,24 @@
-@import './../../../styles/scss/variables.scss';
+@import './../../../styles/scss/globals.scss';
+
 
 .header__main{
-    display: flex;
-    flex-direction: row;
+    @extend .display-row;
     justify-content: space-between;
     align-items: center;
     background-color: $primary;
     color: $primary-dark;
-    padding: 15px;
-    .header_main__search{
-        display: flex;
-        flex-direction: row;
+    padding: 0 20px;
+    max-height: 80px;
+    .header-main__search{
+        @extend .display-row;
         align-items: center;
         margin-left: 30px;
-        .main_search__icon{
+        .main-search__icon{
             font-size: 1.2rem;
             color: $primary-dark;
         }
-        .main_search__input{
+        .main-search__input{
+            width: 100px;
             background-color:$primary;
             border: none;
             padding-left: 20px;
@@ -25,16 +26,17 @@
         }
     }
     // Aquí estilos del logo
+    .header-main__logo{
+        margin: 10px auto;
+    }
 
-
-    .header_main__userArea{
+    .header-main__user-area{
         margin-right: 30px;
-        width: 8%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        width: 80px;
+        @extend .display-row;
+        justify-content: space-around;
         align-items: center;
-        .userArea__icon{
+        .user-area__icon{
             font-size: 1.2rem;
             color: $primary-dark;
         }

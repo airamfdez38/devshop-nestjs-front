@@ -1,18 +1,18 @@
-@import './../../../styles/scss/variables.scss';
+@import '../../../styles/scss/globals.scss';
 
 .socials{
-    display: flex;
-    flex-direction: column;
+    @extend .display-column;
     justify-content: space-around;
     width: 100%;
+    height: auto;
     background-color: $primary-dark;
       
     .socials__ul{
-        display: flex;
-        flex-direction: row;
+        @extend .display-row;
         justify-content: space-around;
         align-items: center;
         width: 10%;
+        margin: 10px;
         
         .socials_ul__li{
             list-style: none;
@@ -20,6 +20,7 @@
             .socials_icon__anchor{
                 font-size: 1rem;
                 color: $light_bg;
+              
             }
         }
     }

@@ -4,7 +4,7 @@ import Slider from '../Slider/Slider';
 
 const Main = () => {
   return (
-    <div style={{height:'200px'}}>
+    <div style={{height:'500px'}}>
        <Slider />
     </div>
 

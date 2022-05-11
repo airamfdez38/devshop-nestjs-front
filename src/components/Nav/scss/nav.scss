@@ -1,20 +1,20 @@
-@import './../../../styles/scss/variables.scss';
+@import './../../../styles/scss/globals.scss';
 
 
 .nav__container{
-    display: flex;
+    @extend .display-row;
     justify-content: center;
     .nav__list{
-        display: flex;
-        flex-direction: row;
+        @extend .display-row;
         justify-content: space-around;
         align-items: center;
         list-style: none;
+        border-bottom: 1px solid $primary-dark;
+        margin: 20px auto;
         .nav-list__link{
             text-decoration: none;
             text-transform: uppercase;
-            
-
+            padding-bottom: 10px;
         }
     }
 }

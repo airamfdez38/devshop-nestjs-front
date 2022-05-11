@@ -1,18 +1,4 @@
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  background-color: #085274;
-}
-
-.socials .socials__ul {
+.display-row, .socials .socials__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,12 +6,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.display-column, .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.socials {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: auto;
+  background-color: #085274;
+}
+
+.socials .socials__ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 10%;
+  margin: 10px;
 }
 
 .socials .socials__ul .socials_ul__li {

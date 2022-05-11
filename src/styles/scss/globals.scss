@@ -1,0 +1,23 @@
+//Colors
+
+
+// Light mode
+
+$primary: #AFC0C5;
+$primary-dark: #085274;
+$light_bg:#ffffff;
+
+// Dark mode
+
+
+
+// @extends
+
+.display-row{
+    display: flex;
+    flex-direction: row;
+}
+.display-column{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/scss/globals.scss';
+
+.slider{
+    width: 800px;
+    margin: auto;
+    overflow-x: hidden;
+    border: 2px solid $primary-dark;
+
+    
+    .slider__container{
+        display: flex;
+        cursor: grab;
+
+        .container__item{
+            height: 20rem;
+            max-width: 30rem;
+            padding: 2rem;
+            
+            .item__img{
+                height: 100%;
+                width: 100%;
+                pointer-events: none;
+            }
+        }
+    }
+}
