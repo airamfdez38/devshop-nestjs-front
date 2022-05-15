@@ -1,0 +1,38 @@
+.display-row, .main__container .main-container__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.display-column, .main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.main__container .main-container__img {
+  width: 80%;
+}
+
+.main__container .main-container__img .container-img__dimensions {
+  width: 90%;
+  background-size: 100% 30%;
+}
+/*# sourceMappingURL=main.css.map */
